@@ -1,4 +1,4 @@
-import { styled } from 'styled-components'
+import styled from 'styled-components'
 import FundoHeader from '../../assets/images/vectorBar.png'
 import { colors } from '../../styles'
 
