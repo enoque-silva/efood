@@ -1,11 +1,10 @@
 import { createGlobalStyle } from 'styled-components'
 
 export const colors = {
-  pink_white: '#FFF8F2',
-  light_orange: '#FFEBD9',
-  white: '#FFFFFF',
-  red: '#E66767',
-  yellow: '#FFB930'
+  salmao_claro: '#FFF8F2',
+  salmao_escuro: '#FFEBD9',
+  branco: '#FFFFFF',
+  rosa: '#E66767'
 }
 
 export const GlobalStyle = createGlobalStyle`
@@ -17,7 +16,13 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background-color: ${colors.pink_white};
-    color: ${colors.red};
+    background-color: ${colors.salmao_claro};
+    color: ${colors.rosa};
+  }
+
+  .container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
   }
 `

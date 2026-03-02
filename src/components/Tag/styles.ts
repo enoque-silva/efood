@@ -1,0 +1,10 @@
+import styled from 'styled-components'
+import { colors } from '../../styles'
+
+export const TagContainer = styled.div`
+  background-color: ${colors.rosa};
+  color: ${colors.salmao_escuro};
+  font-weight: 700;
+  font-size: 12px;
+  padding: 4px 6px;
+`
