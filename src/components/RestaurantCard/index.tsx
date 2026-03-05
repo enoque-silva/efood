@@ -28,7 +28,7 @@ export const RestaurantCard = ({
   title,
   description
 }: Props) => (
-  <CardContainer>
+  <CardContainer to={`/perfil/${id}`}>
     <CardImage src={image} alt={title} />
     <TagsContainer>
       {infos.map((info) => (

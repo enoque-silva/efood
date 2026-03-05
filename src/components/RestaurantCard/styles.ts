@@ -1,15 +1,18 @@
 import styled from 'styled-components'
 import { colors } from '../../styles'
+import { Link } from 'react-router-dom'
 
-export const CardContainer = styled.div`
+export const CardContainer = styled(Link)`
   background-color: ${colors.branco};
   color: ${colors.rosa};
   position: relative;
   border: 1px solid ${colors.rosa};
+  text-decoration: none;
 
   display: flex;
   flex-direction: column;
   height: 100%;
+  cursor: pointer;
 `
 export const CardImage = styled.img`
   width: 100%;
