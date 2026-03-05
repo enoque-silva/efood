@@ -9,6 +9,7 @@ export const Card = styled.div`
   padding: 8px;
   background-color: ${colors.rosa};
   color: ${colors.salmao_claro};
+  cursor: pointer;
 `
 
 export const Foto = styled.img`

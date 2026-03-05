@@ -4,14 +4,15 @@ type Props = {
   foto: string
   nome: string
   descricao: string
+  onSelect?: () => void
 }
 
-const ProductCard = ({ foto, nome, descricao }: Props) => (
-  <Card>
+const ProductCard = ({ foto, nome, descricao, onSelect }: Props) => (
+  <Card onClick={onSelect}>
     <Foto src={foto} alt={nome} />
     <Titulo>{nome}</Titulo>
     <Descricao>{descricao}</Descricao>
-    <BotaoAdicionar>Adicionar ao carrinho</BotaoAdicionar>
+    <BotaoAdicionar type="button">Mais detalhes</BotaoAdicionar>
   </Card>
 )
 
